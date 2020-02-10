@@ -1,6 +1,6 @@
 const QUESTIONS = [
     {
-        'Id': 'number',
+        'Id': 1,
         'Display': false,
         'Asked': false,
         'Question': 'Oil can dissolve what materials?',
@@ -28,7 +28,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 2,
         'Display': false,
         'Asked': false,
         'Question': 'According to a 2017 Gallup Poll, what percentage of the US population identifies as LGBT?',
@@ -56,7 +56,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 3,
         'Display': false,
         'Asked': false,
         'Question': 'What is yeast a type of?',
@@ -84,7 +84,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 4,
         'Display': false,
         'Asked': false,
         'Question': 'How effective is the Withdrawl method?',
@@ -112,7 +112,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 5,
         'Display': false,
         'Asked': false,
         'Question': 'When used correctly, how effective are condoms?',
@@ -140,7 +140,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 6,
         'Display': false,
         'Asked': false,
         'Question': 'What does Asexual mean?',
@@ -168,7 +168,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 7,
         'Display': false,
         'Asked': false,
         'Question': 'What can’t you use with silicone products?',
@@ -196,7 +196,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 8,
         'Display': false,
         'Asked': false,
         'Question': `What is this called?<img src="./images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail">`,
@@ -224,7 +224,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 9,
         'Display': false,
         'Asked': false,
         'Question': 'Where should flavored lube not be applied?',
@@ -252,7 +252,7 @@ const QUESTIONS = [
                 ]
     },
     {
-        'Id': 'number',
+        'Id': 10,
         'Display': false,
         'Asked': false,
         'Question': 'What is  Pansexuality?',
