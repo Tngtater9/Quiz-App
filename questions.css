@@ -9,12 +9,17 @@ main {
 }
 
 li {
-    text-decoration: none;
-    display: inline-block;
+    list-style-type: none;
 }
 header {
     display: flex;
     justify-content: space-between;
+}
+
+.progress-key{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 legend {

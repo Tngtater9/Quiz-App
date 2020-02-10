@@ -18,15 +18,15 @@
     </main> 
     <header>
         <h1>Question # out of total</h1>
-        <ul>
-            <li># right</li>
-            <li>
+        <ul class="progress-key">
+            <li class="progress-item progress-number"># right</li>
+            <li class="progress-item">
                 <figure>
                 <img src="./images/check-mark.png" alt="check mark right" height="30" width="30">
                 </figure>
             </li>
-            <li># wrong</li>
-            <li>
+            <li class="progress-item progress-number"># wrong</li>
+            <li class="progress-item">
                 <figure>
                 <img src="./images/x.png" alt="x mark wrong" height="30" width="30">
                 </figure>
@@ -36,29 +36,29 @@
     <main>
         <form>
             <legend class="question">Some question</legend>
-            <div class="container">
-                <section class="box">
+            <ul class="container">
+                <li class="box">
                     <input type="radio" name="answers" id="answer-A" value="0">
                     <label for="answers">An answer</label>
-                </section>
-                <section class="box">
+                </li>
+                <li class="box">
                     <input type="radio" name="answers" id="answer-B" value="1">
                     <label for="answers">An answer</label>
-                </section>
-                <section class="box">
+                </li>
+                <li class="box">
                     <input type="radio" name="answers" id="answer-C" value="2">
                     <label for="answers">An answer</label>
-                </section>
-                <section class="box">
+                </li>
+                <li class="box">
                     <input type="radio" name="answers" id="answer-D" value="3">
                     <label for="answers">An answer</label>
-                </section>
-            </div>
+                </li>
+            </ul>
         </form>
         <section>
             <button type="submit">Submit/Next</button>
         </section>
-    </main> 
+    </main>   
     <header>
         <h1>Results</h1>
     </header> 

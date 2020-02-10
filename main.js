@@ -3,7 +3,7 @@ const STORE = QUESTIONS;
 // console.log(STORE[9].Answers[2].Feedback);
     
 // render the start page
-    function renderStart(){
+$(function renderStart(){
 
     }
 
@@ -35,4 +35,4 @@ function renderQuiz(){
 // render the results
 function renderResult(){
 
-    }
+    });
