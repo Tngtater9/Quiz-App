@@ -7,16 +7,90 @@
     <title>Sexual Health and Wellness Quiz App</title>
 </head>
 <body>
-    <header>
+    <header class="start-page">
         <h1>Sexual Health and Wellness Quiz</h1>
     </header> 
-    <main>
-        <p>To begin the quiz click the start button below.</p>
+    <main class="start-page">
+        <p>To begin the quiz click the start</p>
         <section>
-            <button type="button" class="js-start">Start</button>
+            <button class="js-start" type="button">Start</button>
         </section>
     </main> 
-    
+    <header class="question-page hidden">
+        <h1>Question # out of total</h1>
+        <ul class="progress-key">
+            <li class="progress-item progress-right"># right</li>
+            <li class="progress-item">
+                <figure>
+                <img src="./images/check-mark.png" alt="check mark right" height="30" width="30">
+                </figure>
+            </li>
+            <li class="progress-item progress-wrong"># wrong</li>
+            <li class="progress-item">
+                <figure>
+                <img src="./images/x.png" alt="x mark wrong" height="30" width="30">
+                </figure>
+            </li>
+        </ul>
+    </header> 
+    <main class="question-page hidden">
+        <form>
+            <legend class="question">Some question</legend>
+            <ul class="container">
+                <li class="box">
+                    <input type="radio" name="answers" id="answer-A" value="0">
+                    <label id="A" for="answers">An answer</label>
+                </li>
+                <li class="box">
+                    <input type="radio" name="answers" id="answer-B" value="1">
+                    <label id="B" for="answers">An answer</label>
+                </li>
+                <li class="box">
+                    <input type="radio" name="answers" id="answer-C" value="2">
+                    <label id="C" for="answers">An answer</label>
+                </li>
+                <li class="box">
+                    <input type="radio" name="answers" id="answer-D" value="3">
+                    <label id="D" for="answers">An answer</label>
+                </li>
+            </ul>
+        </form>
+        <section>
+            <button class="js-submit" type="button">Submit</button>
+        </section>
+    </main>   
+    <header class="feedback-page hidden">
+        <h1>Question # out of total</h1>
+        <ul class="progress-key">
+            <li class="progress-item progress-right"># right</li>
+            <li class="progress-item">
+                <figure>
+                <img src="./images/check-mark.png" alt="check mark right" height="30" width="30">
+                </figure>
+            </li>
+            <li class="progress-item progress-wrong"># wrong</li>
+            <li class="progress-item">
+                <figure>
+                <img src="./images/x.png" alt="x mark wrong" height="30" width="30">
+                </figure>
+            </li>
+        </ul>
+    </header> 
+    <main class="feedback-page hidden">
+        <p class="feedback-message">Feedback</p>
+        <section>
+            <button class="js-next" type="button">Next</button>
+        </section>
+    </main>   
+    <header class="result-page hidden">
+        <h1>Results</h1>
+    </header> 
+    <main class="result-page hidden">
+        <p>You got this many out of this many right</p>
+        <section>
+            <button class="try-again" type="button">Try again?</button>
+        </section>
+    </main>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
