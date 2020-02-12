@@ -199,7 +199,7 @@ const QUESTIONS = [
         'Id': 8,
         'Display': false,
         'Asked': false,
-        'Question': `What is this called?<img src="./images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail">`,
+        'Question': `What is this called?<br><img src="/images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail"><br>`,
         'Answers':[
                     {
                     'Answer': 'Dragon Tail',
@@ -209,17 +209,17 @@ const QUESTIONS = [
                     {
                     'Answer': 'Whip',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a whip. <img src="./images/whip.jpg" alt="Whip">`  
+                    'Feedback': `Wrong. This is a whip.<br><img src="/images/whip.jpg" alt="Whip"><br>`  
                     },
                     {
                     'Answer': 'Flail',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a flail. <img src="./images/flail.jpg" alt="Flail">`  
+                    'Feedback': `Wrong. This is a flail.<br><img src="/images/flail.jpg" alt="Flail"><br>`  
                     },
                     {
                     'Answer': 'Paddle',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a paddle. <img src="./images/paddle.jpg" alt="Paddle">`  
+                    'Feedback': `Wrong. This is a paddle.<br><img src="/images/paddle.jpg" alt="Paddle"><br>`  
                     }
                 ]
     },

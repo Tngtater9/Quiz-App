@@ -1,9 +1,17 @@
 * {
     box-sizing: border-box;
+    color: rgb(75, 11, 0);
 }
 
 .hidden{
     display: none;
+}
+
+body {
+    background-image: url("/images/couple-kissing.jpg");
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -13,18 +21,38 @@ main {
 }
 
 h1 {
+    font-size: 48px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-li {
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
     list-style-type: none;
 }
 
+p{
+    font-size: 32px;
+}
+
+.box {
+    height: 100px;
+    width: 480px;
+    background-color: rgba(182, 110, 16, 0.623);
+    font-size: 28px;
+    border-radius: 20px;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    background-color: rgba(182, 110, 16, 0.95);
+    width: 100%
+    
 }
 
 .progress-key{
@@ -48,12 +76,7 @@ legend {
     margin: auto;
 }
 
-
-.box {
-    font-size: 18;
-    background-color: lightslategray;
-}
 button {
-    display: relative;
-    right: 0px;
+ margin: 60px;
+ font-weight: 800;
 }
