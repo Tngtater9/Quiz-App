@@ -13,7 +13,7 @@ const QUESTIONS = [
                     {
                     'Answer': 'Latex',
                     'Correct': false,
-                    'Feedback': 'Silicone also dissolves in oil.'  
+                    'Feedback': 'Plastic also deteriorates in oil.'  
                     },
                     {
                     'Answer': 'Metal',
@@ -23,7 +23,7 @@ const QUESTIONS = [
                     {
                     'Answer': 'Silicone',
                     'Correct': false,
-                    'Feedback': 'Latex also dissolves in oil.'  
+                    'Feedback': 'Wrong'  
                     }
                 ]
     },
