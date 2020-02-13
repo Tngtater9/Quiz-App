@@ -48,11 +48,12 @@ p{
 }
 
 .box {
-    height: 100px;
-    width: 360px;
+    height: 100%;
+    width: 100%;
     background-color: rgba(182, 69, 16, 0.5);
     font-size: 28px;
     border-radius: 20px;
+    padding: 10px;
 }
 
 header {

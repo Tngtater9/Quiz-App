@@ -200,7 +200,7 @@ const QUESTIONS = [
         'Display': false,
         'Asked': false,
         'Question': `What is this called?<br><figure>
-        <img src="./images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail" height= "80" width= "80">
+        <img src="images/dragon-tail.jpg" alt="BDSM Toy with rolled leather tail" height= "250" width= "250">
         </figure><br>`,
         'Answers':[
                     {
@@ -212,21 +212,21 @@ const QUESTIONS = [
                     'Answer': 'Flogger',
                     'Correct': false,
                     'Feedback': `Wrong. This is a whip.<br><figure>
-                    <img src="./images/flogger.jpg" alt="Flogger" height= "80" width= "80">
+                    <img src="images/flogger.jpg" alt="Flogger" height= "250" width= "250">
                     </figure><br>`  
                     },
                     {
                     'Answer': 'Flail',
                     'Correct': false,
                     'Feedback': `Wrong. This is a flail.<br><figure>
-                    <img src="./images/flail.jpg" alt="Flail" height= "80" width= "80">
+                    <img src="images/flail.jpg" alt="Flail" height= "250" width= "250">
                     </figure><br>`  
                     },
                     {
                     'Answer': 'Paddle',
                     'Correct': false,
                     'Feedback': `Wrong. This is a paddle.<br><figure>
-                    <img src="./images/paddle.jpg" alt="Paddle" height= "80" width= "80">
+                    <img src="images/paddle.jpg" alt="Paddle" height= "250" width= "250">
                     </figure><br>`  
                     }
                 ]
