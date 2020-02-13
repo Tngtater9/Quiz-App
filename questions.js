@@ -87,7 +87,7 @@ const QUESTIONS = [
         'Id': 4,
         'Display': false,
         'Asked': false,
-        'Question': 'How effective is the Withdrawl method?',
+        'Question': 'How effective is the Withdrawal method?',
         'Answers':[
                     {
                     'Answer': '78%',
@@ -97,17 +97,17 @@ const QUESTIONS = [
                     {
                     'Answer': '92%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawl method is 78% effective when used correctly'  
+                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
                     },
                     {
                     'Answer': '24%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawl method is 78% effective when used correctly'  
+                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
                     },
                     {
                     'Answer': '56%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawl method is 78% effective when used correctly'  
+                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
                     }
                 ]
     },
