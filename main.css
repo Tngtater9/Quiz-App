@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
-    color: rgb(92, 13, 0);
-    text-shadow: 2px 2px antiquewhite;
-    font-family: 'Josefin Sans', sans-serif;
+    color: #E00000;
+    text-shadow: -1px -1px 0 antiquewhite,
+                1px -1px 0 antiquewhite,
+                -1px 1px 0 antiquewhite,
+                1px 1px 0 antiquewhite;
+    font-family: 'Lemonada', cursive;
 }
 
 .hidden{
@@ -11,7 +14,7 @@
 
 body {
     background-image: url("images/couple-kissing.jpg");
-    background-position: cover;
+    background-position: center fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -23,8 +26,17 @@ main {
     padding: 0;
 }
 
-h1 {
+.title {
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
     font-size: 48px;
+    font-weight: 500;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +63,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: rgba(182, 69, 16, 0.5);
-    font-size: 28px;
+    font-size: 24px;
     border-radius: 20px;
     padding: 10px;
 }
@@ -91,3 +103,18 @@ button {
  border-radius: 5px;
  text-shadow: none;
 }
+
+@media only screen and (max-width: 720px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex: 0 1;
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+        margin: auto;
+    }
+  }

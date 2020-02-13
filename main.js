@@ -27,7 +27,7 @@ let rightWrong = [0,0];
             isAnsCorrect(pickedAs[selectedAns]);
            $('.question-page').addClass('hidden');
            $('.feedback-page').removeClass('hidden');
-           $('h1').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
+           $('.progress-message').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
            $('.progress-right').text(rightWrong[0]);
            $('.progress-wrong').text(rightWrong[1]);
            $('.feedback-message').html(pickedAs[selectedAns].Feedback);
@@ -43,6 +43,7 @@ let rightWrong = [0,0];
             if((qIndex[0] + 1) === pickedQs.length){
                 $('.feedback-page').addClass('hidden');
                 $('.result-page').removeClass('hidden'); 
+                $('.result-title').html('Results');
                 $('.result-message').html(`You got ${rightWrong[0]} out of ${pickedQs.length} right!`);
             } else{
                 $('.feedback-page').addClass('hidden');
