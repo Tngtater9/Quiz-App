@@ -18,12 +18,12 @@ const QUESTIONS = [
                     {
                     'Answer': 'Metal',
                     'Correct': false,
-                    'Feedback': 'Wrong'  
+                    'Feedback': 'Wrong. Latex and plastic deteriorate in oil.'  
                     },
                     {
                     'Answer': 'Silicone',
                     'Correct': false,
-                    'Feedback': 'Wrong'  
+                    'Feedback': 'Wrong. Latex and plastic deteriorate in oil.'  
                     }
                 ]
     },
