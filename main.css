@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url("/images/couple-kissing.jpg");
+    background-image: url("images/couple-kissing.jpg");
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;

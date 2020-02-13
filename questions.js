@@ -211,7 +211,7 @@ const QUESTIONS = [
                     {
                     'Answer': 'Flogger',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a whip.<br><figure>
+                    'Feedback': `Wrong. This is a flogger.<br><figure>
                     <img src="images/flogger.jpg" alt="Flogger" height= "250" width= "250">
                     </figure><br>`  
                     },
