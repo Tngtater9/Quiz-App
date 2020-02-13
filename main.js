@@ -27,7 +27,7 @@ let rightWrong = [0,0];
             isAnsCorrect(pickedAs[selectedAns]);
            $('.question-page').addClass('hidden');
            $('.feedback-page').removeClass('hidden');
-           $('.progress-message').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
+           $('.progress-message').empty();
            $('.progress-right').text(rightWrong[0]);
            $('.progress-wrong').text(rightWrong[1]);
            $('.feedback-message').html(pickedAs[selectedAns].Feedback);
@@ -39,7 +39,6 @@ let rightWrong = [0,0];
     function handleNextButton (){
         $('.js-next').click(function(){
             console.log('handleNextButton ran');
-            qIndex[0] += 1;
             if((qIndex[0] + 1) === pickedQs.length){
                 $('.feedback-page').addClass('hidden');
                 $('.result-page').removeClass('hidden'); 
@@ -47,7 +46,9 @@ let rightWrong = [0,0];
                 $('.result-message').html(`You got ${rightWrong[0]} out of ${pickedQs.length} right!`);
             } else{
                 $('.feedback-page').addClass('hidden');
+                qIndex[0] ++;
                 $('input[name="answers"]').prop('checked', false);
+                $('.qKey').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
                 renderQuiz(getQuizQuestion, randomAnsSet);
                 $('.question-page').removeClass('hidden');    
             }
