@@ -199,7 +199,9 @@ const QUESTIONS = [
         'Id': 8,
         'Display': false,
         'Asked': false,
-        'Question': `What is this called?<br><img src="/images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail"><br>`,
+        'Question': `What is this called?<br><figure>
+        <img src="./images/dragon.tail.jpg" alt="BDSM Toy with rolled leather tail" height= "80" width= "80">
+        </figure><br>`,
         'Answers':[
                     {
                     'Answer': 'Dragon Tail',
@@ -207,19 +209,25 @@ const QUESTIONS = [
                     'Feedback': 'Correct!'   
                     },
                     {
-                    'Answer': 'Whip',
+                    'Answer': 'Flogger',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a whip.<br><img src="/images/whip.jpg" alt="Whip"><br>`  
+                    'Feedback': `Wrong. This is a whip.<br><figure>
+                    <img src="./images/flogger.jpg" alt="Flogger" height= "80" width= "80">
+                    </figure><br>`  
                     },
                     {
                     'Answer': 'Flail',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a flail.<br><img src="/images/flail.jpg" alt="Flail"><br>`  
+                    'Feedback': `Wrong. This is a flail.<br><figure>
+                    <img src="./images/flail.jpg" alt="Flail" height= "80" width= "80">
+                    </figure><br>`  
                     },
                     {
                     'Answer': 'Paddle',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a paddle.<br><img src="/images/paddle.jpg" alt="Paddle"><br>`  
+                    'Feedback': `Wrong. This is a paddle.<br><figure>
+                    <img src="./images/paddle.jpg" alt="Paddle" height= "80" width= "80">
+                    </figure><br>`  
                     }
                 ]
     },
