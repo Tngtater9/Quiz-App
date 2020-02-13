@@ -157,9 +157,9 @@ function renderQuiz(question, answers){
     }
 
     function makeLiClickable (){
-       $('.container').on('click', '.box', function(event){
-           console.log($(this).find('input'));
-           $(this).find('input').attr('checked', true);
+       $('.container').on('click', 'li','.box', function(event){
+           console.log('makeLiClickable ran',$(this).find('input'));
+           $(this).find('input').prop('checked', true);
        }
 
        )
