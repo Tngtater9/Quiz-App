@@ -7,65 +7,72 @@ let rightWrong = [0,0];
     
 // render the start page
 // Button should trigger quiz questions to render
-    function handleStartButton(){
-        console.log('handleStartButton ran');
-        $('.js-start').click(function(){
-            $('.start-page').addClass('hidden');
+function handleStartButton(){
+    console.log('handleStartButton ran');
+    $('.js-start').click(function(){
+        $('.start-page').addClass('hidden');
+        renderQuiz(getQuizQuestion, randomAnsSet);
+        $('.question-page').removeClass('hidden');
+    });
+}
+// make answer box clickable
+function makeLiClickable (){
+    $('.container').on('click', 'li','.box', function(event){
+        console.log('makeLiClickable ran',$(this).find('input'));
+        $(this).find('input').prop('checked', true);
+    })
+}
+// handle Submit behavior
+function handleSubmitButton(){
+    $('.js-submit').click(function(){
+        console.log('handleSubmitButton ran');
+        let selectedAns = "";
+        if (!$('input[name="answers"]:checked').val()){
+        alert('Please pick an answer.');
+        } else {
+        selectedAns = $('input[name="answers"]:checked').val();
+        isAnsCorrect(pickedAs[selectedAns]);
+        $('.question-page').addClass('hidden');
+        $('.feedback-page').removeClass('hidden');
+        $('.progress-message').empty();
+        $('.progress-right').text(rightWrong[0]);
+        $('.progress-wrong').text(rightWrong[1]);
+        $('.feedback-message').html(pickedAs[selectedAns].Feedback);
+        }
+        
+        
+    });
+}
+function handleNextButton (){
+    $('.js-next').click(function(){
+        console.log('handleNextButton ran');
+        if((qIndex[0] + 1) === pickedQs.length){
+            $('.feedback-page').addClass('hidden');
+            $('.result-page').removeClass('hidden'); 
+            $('.result-title').html('Results');
+            $('.result-message').html(`You got ${rightWrong[0]} out of ${pickedQs.length} right!`);
+        } else{
+            $('.feedback-page').addClass('hidden');
+            qIndex[0] ++;
+            $('input[name="answers"]').prop('checked', false);
+            $('.qKey').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
             renderQuiz(getQuizQuestion, randomAnsSet);
-            $('.question-page').removeClass('hidden');
-        });
-    }
-    // handle Submit behavior
-    function handleSubmitButton(){
-        $('.js-submit').click(function(){
-           console.log('handleSubmitButton ran');
-           let selectedAns = "";
-           if (!$('input[name="answers"]:checked').val()){
-            alert('Please pick an answer.');
-           } else {
-            selectedAns = $('input[name="answers"]:checked').val();
-            isAnsCorrect(pickedAs[selectedAns]);
-           $('.question-page').addClass('hidden');
-           $('.feedback-page').removeClass('hidden');
-           $('.progress-message').empty();
-           $('.progress-right').text(rightWrong[0]);
-           $('.progress-wrong').text(rightWrong[1]);
-           $('.feedback-message').html(pickedAs[selectedAns].Feedback);
-           }
-           
-           
-        });
-    }
-    function handleNextButton (){
-        $('.js-next').click(function(){
-            console.log('handleNextButton ran');
-            if((qIndex[0] + 1) === pickedQs.length){
-                $('.feedback-page').addClass('hidden');
-                $('.result-page').removeClass('hidden'); 
-                $('.result-title').html('Results');
-                $('.result-message').html(`You got ${rightWrong[0]} out of ${pickedQs.length} right!`);
-            } else{
-                $('.feedback-page').addClass('hidden');
-                qIndex[0] ++;
-                $('input[name="answers"]').prop('checked', false);
-                $('.qKey').text(`Question ${qIndex[0].length} out of ${pickedQs.length}`);
-                renderQuiz(getQuizQuestion, randomAnsSet);
-                $('.question-page').removeClass('hidden');    
-            }
-        });
-    }
+            $('.question-page').removeClass('hidden');    
+        }
+    });
+}
 
-    function handleTryAgain (){
-        $('.try-again').click(function(){
-            console.log('handleTryAgain ran');
-        $('.result-page').addClass('hidden');
-            pickedAs = [];
-            qIndex[0] = 0;
-            pickedQs = [];
-            rightWrong = [0,0];
-            $('h1').text('Sexual Health and Wellness Quiz');
-        $('.start-page').removeClass('hidden');})
-    }
+function handleTryAgain (){
+    $('.try-again').click(function(){
+        console.log('handleTryAgain ran');
+    $('.result-page').addClass('hidden');
+        pickedAs = [];
+        qIndex[0] = 0;
+        pickedQs = [];
+        rightWrong = [0,0];
+        $('h1').text('Sexual Health and Wellness Quiz');
+    $('.start-page').removeClass('hidden');})
+}
 // render the quiz 
 function renderQuiz(question, answers){
     console.log('renderQuiz ran');
@@ -88,83 +95,73 @@ function renderQuiz(question, answers){
     $('#D').html(`${pickedAs[3].Answer}`);
     }
     // get questions at random
-    function getQuizQuestion (array) {
-        console.log('getQuizQuestion ran');
-        let currentIndex = array.length;
-        let temporaryValue = 0;
-        let randomIndex = 0;
+function getQuizQuestion (array) {
+    console.log('getQuizQuestion ran');
+    let currentIndex = array.length;
+    let temporaryValue = 0;
+    let randomIndex = 0;
 
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
 
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-            // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
 
-        return array;
-        
-        }
+    return array;
+    
+    }
 
         
     // get random answer set for question
-    function randomAnsSet(array){
-        console.log('randomAnsSet ran');
-            // for(let i = 0; i < answers.length; i++){
-            //     let newAindex = Math.floor(Math.random() * aNum.length);
-            //     askedA.push(answers[aNum[newAindex]]);
-            //     aNum.splice(newAindex,1);
-            //     console.log(`This is my current aNum ${aNum}`);
-            //   }
-            let currentIndex = array.length;
-            let temporaryValue = 0;
-            let randomIndex = 0;
+function randomAnsSet(array){
+console.log('randomAnsSet ran');
+    // for(let i = 0; i < answers.length; i++){
+    //     let newAindex = Math.floor(Math.random() * aNum.length);
+    //     askedA.push(answers[aNum[newAindex]]);
+    //     aNum.splice(newAindex,1);
+    //     console.log(`This is my current aNum ${aNum}`);
+    //   }
+    let currentIndex = array.length;
+    let temporaryValue = 0;
+    let randomIndex = 0;
 
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
+// While there remain elements to shuffle...
+while (0 !== currentIndex) {
 
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
 
-            // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+}
 
-        return array;
-        
-        }
+return array;
+
+}
     
         
 
-    function // check for correct answer
-    isAnsCorrect(answer){
-   console.log('isAnsCorrect ran');
-   if(answer.Correct === true){
-        rightWrong[0] += 1;
+ // check for correct answer
+function isAnsCorrect(answer){
+    console.log('isAnsCorrect ran');
+    if(answer.Correct === true){
+            rightWrong[0] += 1;
+            return;
+    } else {
+        rightWrong[1] += 1;
         return;
-   } else {
-       rightWrong[1] += 1;
-       return;
-   }
     }
-
-    function makeLiClickable (){
-       $('.container').on('click', 'li','.box', function(event){
-           console.log('makeLiClickable ran',$(this).find('input'));
-           $(this).find('input').prop('checked', true);
-       }
-
-       )
-    }
-    
+}
     
 function handleQuiz(){
     handleStartButton();

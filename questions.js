@@ -3,7 +3,7 @@ const QUESTIONS = [
         'Id': 1,
         'Display': false,
         'Asked': false,
-        'Question': 'Oil can dissolve what materials?',
+        'Question': 'Oil can deteriorate what materials?',
         'Answers':[
                     {
                     'Answer': 'Latex and plastic',
