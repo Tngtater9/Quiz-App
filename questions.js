@@ -6,7 +6,7 @@ const QUESTIONS = [
         'Question': 'Oil can dissolve what materials?',
         'Answers':[
                     {
-                    'Answer': 'Latex and Silicone',
+                    'Answer': 'Latex and plastic',
                     'Correct': true,
                     'Feedback': 'Correct!'   
                     },
@@ -16,7 +16,7 @@ const QUESTIONS = [
                     'Feedback': 'Silicone also dissolves in oil.'  
                     },
                     {
-                    'Answer': 'ABS Plastic',
+                    'Answer': 'Metal',
                     'Correct': false,
                     'Feedback': 'Wrong'  
                     },
