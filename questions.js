@@ -13,7 +13,7 @@ const QUESTIONS = [
                     {
                     'Answer': 'Latex',
                     'Correct': false,
-                    'Feedback': 'Plastic also deteriorates in oil.'  
+                    'Feedback': 'Wrong. Plastic also deteriorates in oil.'  
                     },
                     {
                     'Answer': 'Metal',
@@ -41,17 +41,17 @@ const QUESTIONS = [
                     {
                     'Answer': '20%',
                     'Correct': false,
-                    'Feedback': '4.5% of the US population is LGBT.'  
+                    'Feedback': 'Wrong. 4.5% of the US population is LGBT.'  
                     },
                     {
                     'Answer': '11%',
                     'Correct': false,
-                    'Feedback': '4.5% of the US population is LGBT.'  
+                    'Feedback': 'Wrong. 4.5% of the US population is LGBT.'  
                     },
                     {
                     'Answer': '1.7%',
                     'Correct': false,
-                    'Feedback': '4.5% of the US population is LGBT.'  
+                    'Feedback': 'Wrong. 4.5% of the US population is LGBT.'  
                     }
                 ]
     },
@@ -69,17 +69,17 @@ const QUESTIONS = [
                     {
                     'Answer': 'Sugar',
                     'Correct': false,
-                    'Feedback': 'The overgrowth of the fungus Candida causes yeast infections.'  
+                    'Feedback': 'Wrong. The overgrowth of the fungus Candida causes yeast infections.'  
                     },
                     {
                     'Answer': 'Bacteria',
                     'Correct': false,
-                    'Feedback': 'The overgrowth of the fungus Candida causes yeast infections.'  
+                    'Feedback': 'Wrong. The overgrowth of the fungus Candida causes yeast infections.'  
                     },
                     {
                     'Answer': 'Virus',
                     'Correct': false,
-                    'Feedback': 'The overgrowth of the fungus Candida causes yeast infections.'  
+                    'Feedback': 'Wrong. The overgrowth of the fungus Candida causes yeast infections.'  
                     }
                 ]
     },
@@ -97,17 +97,17 @@ const QUESTIONS = [
                     {
                     'Answer': '92%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
+                    'Feedback': 'Wrong. The Withdrawal method is 78% effective when used correctly'  
                     },
                     {
                     'Answer': '24%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
+                    'Feedback': 'Wrong. The Withdrawal method is 78% effective when used correctly'  
                     },
                     {
                     'Answer': '56%',
                     'Correct': false,
-                    'Feedback': 'The Withdrawal method is 78% effective when used correctly'  
+                    'Feedback': 'Wrong. The Withdrawal method is 78% effective when used correctly'  
                     }
                 ]
     },
@@ -125,17 +125,17 @@ const QUESTIONS = [
                     {
                     'Answer': '89%',
                     'Correct': false,
-                    'Feedback': 'They are actually 98% effective when used correctly.'  
+                    'Feedback': 'Wrong. They are actually 98% effective when used correctly.'  
                     },
                     {
                     'Answer': '70%',
                     'Correct': false,
-                    'Feedback': 'They are actually 98% effective when used correctly.'  
+                    'Feedback': 'Wrong. They are actually 98% effective when used correctly.'  
                     },
                     {
                     'Answer': '80%',
                     'Correct': false,
-                    'Feedback': 'They are actually 98% effective when used correctly.'  
+                    'Feedback': 'Wrong. They are actually 98% effective when used correctly.'  
                     }
                 ]
     },
@@ -153,17 +153,17 @@ const QUESTIONS = [
                     {
                     'Answer': 'A sexual person',
                     'Correct': false,
-                    'Feedback': 'Wrong an Asexual or Ace person has no attraction to anyone.'  
+                    'Feedback': 'Wrong. An Asexual or Ace person has no attraction to anyone.'  
                     },
                     {
                     'Answer': 'Sexualizes the letter A',
                     'Correct': false,
-                    'Feedback': 'Wrong an Asexual or Ace person has no attraction to anyone.'  
+                    'Feedback': 'Wrong. An Asexual or Ace person has no attraction to anyone.'  
                     },
                     {
                     'Answer': 'Autosexual',
                     'Correct': false,
-                    'Feedback': 'Wrong an Asexual or Ace person has no attraction to anyone.'  
+                    'Feedback': 'Wrong. An Asexual or Ace person has no attraction to anyone.'  
                     }
                 ]
     },
@@ -181,17 +181,17 @@ const QUESTIONS = [
                     {
                     'Answer': 'Heat',
                     'Correct': false,
-                    'Feedback': 'It is safe to heat up silicone if your product doesn\'t have a motor.'  
+                    'Feedback': 'Wrong. It is safe to heat up silicone if your product doesn\'t have a motor.'  
                     },
                     {
                     'Answer': 'Water based lube',
                     'Correct': false,
-                    'Feedback': 'It is safe to use water based lube with silicone.'  
+                    'Feedback': 'Wrong. It is safe to use water based lube with silicone.'  
                     },
                     {
                     'Answer': 'Flavored lube',
                     'Correct': false,
-                    'Feedback': 'Flavored lube is safe to use with silicone.'  
+                    'Feedback': 'Wrong. Flavored lube is safe to use with silicone.'  
                     }
                 ]
     },
@@ -240,22 +240,22 @@ const QUESTIONS = [
                     {
                     'Answer': 'Internally',
                     'Correct': true,
-                    'Feedback': 'Specifically flavored lube should not be used for vaginal intercourse.'   
+                    'Feedback': 'Correct! Specifically flavored lube should not be used for vaginal intercourse.'   
                     },
                     {
                     'Answer': 'On the lips',
                     'Correct': false,
-                    'Feedback': 'It is safe to ingest flavored lube. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
+                    'Feedback': 'Wrong. It is safe to ingest flavored lube. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     },
                     {
                     'Answer': 'To sheets',
                     'Correct': false,
-                    'Feedback': 'Most flavored lubes will not stain sheets. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
+                    'Feedback': 'Wrong. Most flavored lubes will not stain sheets. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     },
                     {
                     'Answer': 'In hair',
                     'Correct': false,
-                    'Feedback': 'Flavored lube will wash out of hair. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
+                    'Feedback': 'Wrong. Flavored lube will wash out of hair. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     }
                 ]
     },

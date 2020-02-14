@@ -120,6 +120,10 @@ button {
         font-size: 14px;
     }
 
+    main{
+        height: 100%;
+    }
+
     form{
         font-size: 10px;
     }
