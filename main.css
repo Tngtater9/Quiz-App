@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
     color: #E00000;
-    text-shadow: -1px -1px 0 antiquewhite,
-                1px -1px 0 antiquewhite,
-                -1px 1px 0 antiquewhite,
-                1px 1px 0 antiquewhite;
+    text-shadow: -1px -1px 0 #FFFFFF,
+                1px -1px 0 #FFFFFF,
+                -1px 1px 0 #FFFFFF,
+                1px 1px 0 #FFFFFF;
     font-family: 'Lemonada', cursive;
 }
 
@@ -108,7 +108,7 @@ section{
 button {
  margin-top: 40px;
  background-color: rgb(228, 0, 0, 0.95);
- color: antiquewhite;
+ color: #FFFFFF;
  font-weight: 800;
  padding: 5px;
  border-radius: 5px;
