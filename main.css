@@ -97,6 +97,10 @@ p{
     padding: 10px;
 }
 
+.box:hover{
+    cursor: pointer;
+}
+
 .box:focus {
     border: 3px solid rgb(160, 160, 160);
   }
@@ -117,9 +121,18 @@ button {
  text-shadow: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 720px) {
     h1{
         font-size: 14px;
+    }
+
+    body{
+        background-image: none;
+        background-color: black;
     }
 
     main{

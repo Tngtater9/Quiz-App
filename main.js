@@ -8,7 +8,6 @@ let rightWrong = [0,0];
 // render the start page
 // Button should trigger quiz questions to render
 function handleStartButton(){
-    console.log('handleStartButton ran');
     $('.js-start').click(function(){
         $('.start-page').addClass('hidden');
         renderQuiz(getQuizQuestion, randomAnsSet);
@@ -18,14 +17,12 @@ function handleStartButton(){
 // make answer box clickable
 function makeLiClickable (){
     $('.container').on('click', 'li','.box', function(event){
-        console.log('makeLiClickable ran',$(this).find('input'));
         $(this).find('input').prop('checked', true);
     })
 }
 // handle Submit behavior
 function handleSubmitButton(){
     $('.js-submit').click(function(){
-        console.log('handleSubmitButton ran');
         let selectedAns = "";
         if (!$('input[name="answers"]:checked').val()){
         alert('Please pick an answer.');
@@ -45,7 +42,6 @@ function handleSubmitButton(){
 }
 function handleNextButton (){
     $('.js-next').click(function(){
-        console.log('handleNextButton ran');
         if((qIndex[0] + 1) === pickedQs.length){
             $('.feedback-page').addClass('hidden');
             $('.result-page').removeClass('hidden'); 
@@ -64,7 +60,6 @@ function handleNextButton (){
 
 function handleTryAgain (){
     $('.try-again').click(function(){
-        console.log('handleTryAgain ran');
     $('.result-page').addClass('hidden');
         pickedAs = [];
         qIndex[0] = 0;
@@ -75,7 +70,6 @@ function handleTryAgain (){
 }
 // render the quiz 
 function renderQuiz(question, answers){
-    console.log('renderQuiz ran');
     if(pickedQs.length > 0){
         
     } else {
@@ -87,7 +81,6 @@ function renderQuiz(question, answers){
     $('h1').text(`Question ${qIndex[0] + 1} out of ${pickedQs.length}`);
     $('.progress-right').text(rightWrong[0]);
     $('.progress-wrong').text(rightWrong[1]);
-    console.log(pickedQ);
     $('.question').html(`${pickedQ.Question}`);
     $('#A').html(`${pickedAs[0].Answer}`);
     $('#B').html(`${pickedAs[1].Answer}`);
@@ -96,7 +89,6 @@ function renderQuiz(question, answers){
     }
     // get questions at random
 function getQuizQuestion (array) {
-    console.log('getQuizQuestion ran');
     let currentIndex = array.length;
     let temporaryValue = 0;
     let randomIndex = 0;
@@ -121,13 +113,6 @@ function getQuizQuestion (array) {
         
     // get random answer set for question
 function randomAnsSet(array){
-console.log('randomAnsSet ran');
-    // for(let i = 0; i < answers.length; i++){
-    //     let newAindex = Math.floor(Math.random() * aNum.length);
-    //     askedA.push(answers[aNum[newAindex]]);
-    //     aNum.splice(newAindex,1);
-    //     console.log(`This is my current aNum ${aNum}`);
-    //   }
     let currentIndex = array.length;
     let temporaryValue = 0;
     let randomIndex = 0;
@@ -153,7 +138,6 @@ return array;
 
  // check for correct answer
 function isAnsCorrect(answer){
-    console.log('isAnsCorrect ran');
     if(answer.Correct === true){
             rightWrong[0] += 1;
             return;
