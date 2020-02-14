@@ -211,21 +211,21 @@ const QUESTIONS = [
                     {
                     'Answer': 'Flogger',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a flogger.<br><figure>
+                    'Feedback': `Wrong. It was a Dragon Tail. This is a flogger.<br><figure>
                     <img src="images/flogger.jpg" alt="Flogger" height= "250" width= "250">
                     </figure><br>`  
                     },
                     {
                     'Answer': 'Flail',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a flail.<br><figure>
+                    'Feedback': `Wrong. It was a Dragon Tail. This is a flail.<br><figure>
                     <img src="images/flail.jpg" alt="Flail" height= "250" width= "250">
                     </figure><br>`  
                     },
                     {
                     'Answer': 'Paddle',
                     'Correct': false,
-                    'Feedback': `Wrong. This is a paddle.<br><figure>
+                    'Feedback': `Wrong. It was a Dragon Tail. This is a paddle.<br><figure>
                     <img src="images/paddle.jpg" alt="Paddle" height= "250" width= "250">
                     </figure><br>`  
                     }
@@ -245,17 +245,17 @@ const QUESTIONS = [
                     {
                     'Answer': 'On the lips',
                     'Correct': false,
-                    'Feedback': 'It is safe to ingest flavored lube.'  
+                    'Feedback': 'It is safe to ingest flavored lube. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     },
                     {
                     'Answer': 'To sheets',
                     'Correct': false,
-                    'Feedback': 'Most flavored lubes will not stain sheets.'  
+                    'Feedback': 'Most flavored lubes will not stain sheets. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     },
                     {
                     'Answer': 'In hair',
                     'Correct': false,
-                    'Feedback': 'Flavored lube will wash out of hair.'  
+                    'Feedback': 'Flavored lube will wash out of hair. Flavored lube should not be used internally, especially not for vaginal intercourse.'  
                     }
                 ]
     },
